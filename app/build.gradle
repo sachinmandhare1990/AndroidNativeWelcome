@@ -3,6 +3,9 @@ plugins {
 }
 
 android {
+    compileSdkVersion 31
+    buildToolsVersion "30.0.3"
+
     signingConfigs {
         release {
             storeFile file('F:\\AndroidNativeProjects\\keystore.jks')
@@ -11,8 +14,6 @@ android {
             keyPassword '123456'
         }
     }
-    compileSdkVersion 31
-    buildToolsVersion "30.0.3"
 
     defaultConfig {
         applicationId "com.example.myapplication"
